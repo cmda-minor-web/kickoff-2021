@@ -24,18 +24,34 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-h1 {
+header h1 {
   font-size: 7vw;
   text-align:center;
+  position: relative;
+  z-index:10;
+
 }
-h1 em {
+header h1 em {
   font-size:2rem;
   display:block
+}
+header img {
+  position: absolute;
+  top:10em;
+  right:2em;
+  z-index:1;
+  border-radius:1rem;
+  width:15vw;
 }
 h2 {
   font-size: 2em;
   margin-top: 1.5em;
+}
+main {
+  position: relative;
+  z-index:10;
 }
 section > ul {
   display: flex;
@@ -50,6 +66,10 @@ section > ul li {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+}
+
+section > p {
+  padding-right: 5em;
 }
 
 ul img {
@@ -104,6 +124,8 @@ article p {
   padding:.5rem;
   font-size: .8em;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 article p svg {
   stroke:rgba(255,255,255,.6);
