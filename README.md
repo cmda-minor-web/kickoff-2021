@@ -1,1 +1,1 @@
-# kickoff-opdracht-individueel-2021
+# Minor Web Design & Development Kickoff 2021
