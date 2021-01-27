@@ -98,6 +98,16 @@ a,
 a:visited {
   color: var(--course);
 }
+article p {
+  border: 1px solid #000;
+  background-color: rgba(255,255,255,.2);
+  padding:.5rem;
+  font-size: .8em;
+  display: flex;
+}
+article p svg {
+  stroke:rgba(255,255,255,.6);
+}
 
 body > footer {
   font-style: italic;
