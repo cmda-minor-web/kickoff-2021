@@ -76,8 +76,8 @@ ul {
 */
 body p,
 body ul {
-    max-width:40em;
-    width:70vw;
+    /max-width:40em;
+    /width:70vw;
 }
 body > header{
     padding: 1rem;
