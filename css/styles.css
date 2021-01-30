@@ -11,11 +11,11 @@ header h1 em {
 }
 header img {
   position: absolute;
-  top:10em;
+  top:14em;
   right:2em;
   z-index:1;
   border-radius:1rem;
-  width:15vw;
+  width:25vw;
 }
 h2 {
   font-size: 2em;
