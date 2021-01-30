@@ -34,8 +34,15 @@ h1, h2 {
     font-size: 1.6em;
     position:relative;
 }
+h2 {
+    color:var(--cmd-secondary);
+    background-color: #fff;
+    padding:2rem;
+    margin-left:-1rem;
+    clip-path: polygon(0 0, 100% 17%, 100% 81%, 0 88%);
+}
 a {
-    color: var(--cmd-primary);
+    color: var(--cmd-secondary);
 }
 a:hover, a:focus,  summary:hover,  summary:focus{
     background: var(--cmd-primary);
@@ -65,26 +72,16 @@ abbr {
 i {
 	font-style: normal;
 }
-ul {
-  /list-style: none;
-  /padding-left:0
-
-}
 
 /*
   Header met het logo en de titel
 */
-body p,
-body ul {
-    /max-width:40em;
-    /width:70vw;
-}
 body > header{
     padding: 1rem;
 }
 body > header h1 {
     padding-top:1rem;
-    line-height: 2;
+    line-height: 1.5;
 }
 svg {
     margin-top: .5rem;
@@ -111,18 +108,6 @@ footer {
     overflow-x: hidden;
     color: var(--cmd-primary);
 }
-footer h2 {
-    padding:.2em .3em;
-    background-color: var(--cmd-primary);
-    color:#000;
-    display:inline-block;
-}
-footer h3 {
-    margin-left: 2em;
-}
-footer p {
-    max-width: 30em;
-}
 footer a {
     color: var(--cmd-primary);
 }
@@ -130,14 +115,4 @@ footer img {
     background: white;
     padding: 0.6em;
     margin: 0;
-}
-footer img[title="wd"] {
-    width: 10.1em;
-    filter: brightness(1);
-}
-footer img[title="cmd"] {
-    width: 6.19em;
-}
-footer img[title="hva"] {
-    width: 12em;    
 }
