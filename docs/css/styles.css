@@ -1,0 +1,118 @@
+header h1 {
+  font-size: 7vw;
+  position: relative;
+  z-index:10;
+  margin:0;
+
+}
+header h1 em {
+  font-size:1rem;
+  display:block;
+  font-weight:normal;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+img {
+  max-width:100%;
+}
+main {
+  position: relative;
+  z-index:10;
+}
+
+ul img {
+  border: 2px solid var(--light);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+img {
+  max-width: 100%;
+}
+
+article {
+  margin: 2em 0;
+  background-color:rgba(255,255,255,.2);
+  padding:0 2rem 2rem;
+  position: relative;
+  width:100%;
+  
+}
+article h3 {
+  color:var(--cmd-secondary);
+  margin:-.5rem -2rem 0;
+  background-color:var(--cmd-primary);
+  padding:2rem;
+  clip-path: polygon(0 0, 100% 8%, 100% 93%, 0 100%);
+  
+}
+
+article p svg {
+  stroke:rgba(255,255,255,.6);
+  margin-left:1rem;
+}
+aside {
+
+}
+body > footer {
+  font-style: italic;
+}
+footer h4 {
+  margin-bottom: .25rem;
+}
+footer a {
+  position: relative;
+  padding-left: 2.5rem
+}
+footer a:hover {
+  background-color: transparent;
+}
+footer a svg {
+  position: absolute;
+  left:0;
+  top: 0;
+  transform:scale(.6) translateY(-1.25rem);
+  margin-bottom: .25rem;
+  stroke:rgba(255,255,255,.6)
+}
+article footer {
+  display:flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+aside {
+  margin:0 1rem;
+}
+aside h3 {
+  background: var(--cmd-secondary);
+  margin: 0;
+  padding: 1rem 2rem;
+  color: var(--cmd-primary);
+  clip-path: polygon(0 0, 100% 17%, 100% 81%, 0 88%);
+}
+aside img {
+  margin-bottom: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+}
+
+@media (min-width: 40em) {
+  body {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:1em;
+  }
+
+  header,
+  footer {
+    grid-column: 1 / -1;
+  }
+
+  main {
+    grid-column: 1 / 2;
+  }
+  aside {
+    grid-column: 2 / 3;
+    margin: 0 1rem 0 0;
+  }
+}

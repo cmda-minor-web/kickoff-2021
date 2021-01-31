@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "squadId": "1",
+    "name": "Team A"
+  },
+  {
+    "id": "2",
+    "squadId": "1",
+    "name": "Team B"
+  },
+  {
+    "id": "3",
+    "squadId": "1",
+    "name": "Team C"
+  },
+  {
+    "id": "4",
+    "squadId": "2",
+    "name": "Team A"
+  },
+  {
+    "id": "5",
+    "squadId": "2",
+    "name": "Team B"
+  },
+  {
+    "id": "6",
+    "squadId": "2",
+    "name": "Team C"
+  }
+]
