@@ -4,6 +4,14 @@
   --minor-one:#34A8E0;
   --minor-two:#E9590E;
   --minor-three:#3AAA34;
+
+  --dark: #000;
+  --course: #01CD85;
+  --light: #fff;
+
+  --groen: #01CD85;
+  --blauw: #01B4EB;
+  --geel: #F1E40A;
 }
 
 * {
@@ -12,9 +20,9 @@
 }
 
 html {
-  background-color: var(--minor-one);
-  background: linear-gradient(10deg, var(--minor-two) 24%, rgba(0,0,0,0) 24%),
-              linear-gradient(21deg, var(--minor-three) 46%, var(--minor-one) 46%);
+  background-color: var(--groen);
+  background: linear-gradient(12deg, var(--groen) 46%, rgba(0,0,0,0) 34%),
+              linear-gradient(21deg, var(--geel) 56%, var(--blauw) 46%);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Open sans", Helvetica, Sans-Serif;
@@ -152,7 +160,7 @@ img {
 
 article {
   margin: 2em 0;
-  background-color:rgba(255,255,255,.2);
+  background-color:var(--groen);
   padding:0 2rem 2rem;
   position: relative;
   width:100%;
