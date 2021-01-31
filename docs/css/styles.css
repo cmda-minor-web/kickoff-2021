@@ -178,7 +178,7 @@ body > footer {
   font-style: italic;
 }
 footer h4 {
-  margin-bottom: .25rem;
+  margin: .25rem 0;
 }
 footer a {
   position: relative;
@@ -193,12 +193,20 @@ footer a svg {
   top: 0;
   transform:scale(.6) translateY(-1.25rem);
   margin-bottom: .25rem;
-  stroke:rgba(255,255,255,.6)
+  stroke:var(--cmd-secondary);
 }
 article footer {
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin-top: 0;
+  padding: 2rem;
+  margin: 2rem -2rem -2rem;
+  background: rgb(255 255 255 / 80%);
+  color: var(--cmd-secondary);
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+article footer a {
+  color: var(--cmd-secondary);
 }
 aside {
   margin:0 1rem;
