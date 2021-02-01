@@ -14,10 +14,10 @@ const putData = {
     surname:'Duinker',
     mugshot:'',
     githubHandle:'',
-    other:{
-        hobbies: 'fishing',
-        color: 'aqua',
-        skills: ['vue', 'react']
+    other: {
+        sport: '',
+        muziek: '',
+        werkplek: ''
     }
 }
 

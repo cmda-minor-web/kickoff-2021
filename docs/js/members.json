@@ -162,16 +162,6 @@
       {
         "id": "1",
         "teamId": "3",
-        "name": "Rowin",
-        "prefix": "",
-        "surname": "Ruizendaal",
-        "mugshot": "",
-        "githubHandle": "",
-        "other": ""
-      },
-      {
-        "id": "2",
-        "teamId": "3",
         "name": "Jeffrey",
         "prefix": "van",
         "surname": "Kampen",
@@ -180,7 +170,7 @@
         "other": ""
       },
       {
-        "id": "3",
+        "id": "2",
         "teamId": "3",
         "name": "Marvin",
         "prefix": "",
@@ -190,7 +180,7 @@
         "other": ""
       },
       {
-        "id": "4",
+        "id": "3",
         "teamId": "3",
         "name": "Max",
         "prefix": "",
@@ -200,7 +190,7 @@
         "other": ""
       },
       {
-        "id": "5",
+        "id": "4",
         "teamId": "3",
         "name": "Mohamed",
         "prefix": "",
@@ -210,7 +200,7 @@
         "other": ""
       },
       {
-        "id": "6",
+        "id": "5",
         "teamId": "3",
         "name": "Roeland",
         "prefix": "van",
@@ -220,7 +210,7 @@
         "other": ""
       },
       {
-        "id": "7",
+        "id": "6",
         "teamId": "3",
         "name": "Merlijn",
         "prefix": "",
@@ -230,7 +220,7 @@
         "other": ""
       },
       {
-        "id": "8",
+        "id": "7",
         "teamId": "3",
         "name": "Jimmy",
         "prefix": "",
@@ -240,7 +230,7 @@
         "other": ""
       },
       {
-        "id": "9",
+        "id": "8",
         "teamId": "3",
         "name": "Giliam",
         "prefix": "",
