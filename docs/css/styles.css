@@ -106,9 +106,10 @@ section {
   padding:1rem;
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
 }
-
+section  section  img {
+  /width:5em
+}
 /* footer */
 footer {
   padding: 1em;
@@ -164,6 +165,7 @@ article {
   padding:0 2rem 2rem;
   position: relative;
   width:100%;
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.2);
   
 }
 article h3 {
@@ -178,9 +180,6 @@ article h3 {
 article p svg {
   stroke:rgba(255,255,255,.6);
   margin-left:1rem;
-}
-aside {
-
 }
 body > footer {
   font-style: italic;
@@ -219,7 +218,8 @@ article footer a {
 aside {
   margin:0 1rem;
 }
-aside h3 {
+aside h3,
+body.tribe section h3 {
   background: var(--cmd-secondary);
   margin: 0;
   padding: 1rem 2rem;
@@ -231,6 +231,10 @@ aside img {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
 }
 
+section h2 {
+  position: sticky;
+}
+
 @media (min-width: 40em) {
   body {
     display:grid;
@@ -238,6 +242,23 @@ aside img {
     grid-gap:1em;
   }
 
+  body.tribe {
+    display:flex;
+    flex-direction:column;
+  }
+
+  body.tribe main {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  body.tribe main > section section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+  }
+  body.tribe main > section section h3 {
+    grid-column: 1 / -1;
+  }
   header,
   footer {
     grid-column: 1 / -1;
@@ -246,6 +267,7 @@ aside img {
   main {
     grid-column: 1 / 2;
   }
+  body.tribe
   aside {
     grid-column: 2 / 3;
     margin: 0 1rem 0 0;
