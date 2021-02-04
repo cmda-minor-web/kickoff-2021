@@ -52,7 +52,7 @@
         squads.forEach(squad => {
             const section = document.createElement('section')
             const heading = document.createElement('h2')
-            heading.textContent = squad.name;
+            heading.textContent = `Squad ${squad.name}`;
             section.append(heading)
             main.append(section)
         })
