@@ -56,6 +56,22 @@ a:hover, a:focus,  summary:hover,  summary:focus{
   background: var(--cmd-primary);
   color: var(--cmd-secondary);
 }
+button {
+  background: var(--minor-one);
+  outline:none;
+  border:0;
+  font-size: inherit;
+  padding:1em;
+  box-shadow: 10px 10px 0 rgb(0 0 0 / 20%);
+  transition: .25s;
+  color:#fff
+}
+button:hover,
+button:focus {
+  background: var(--minor-two);
+  box-shadow: 5px 5px 0 rgb(0 0 0 / 20%);
+  transform:scale(0.95)
+}
 pre {
   overflow-x: hidden;
 }
@@ -112,7 +128,7 @@ section  section  img {
 }
 /* footer */
 footer {
-  padding: 1em;
+  padding: 2rem;
   border-radius: 0.2em;
   overflow-x: hidden;
   color: var(--cmd-primary);
