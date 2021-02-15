@@ -1,8 +1,11 @@
+import { loading } from './ui.js'
+
 const url = 'https://600ff44f6c21e1001704fac2.mockapi.io/minor-web/api'
-const main = document.querySelector('main')
 
 export async function fetchTribe () {
     const tribe = {}
+    loading(true)
+
     const squads = await fetch(`${url}/squads/`)
     const squadsJSON = await squads.json()
 
@@ -28,8 +31,9 @@ export async function fetchTribe () {
     const allMembersPerSquad = await Promise.all(membersJSON)
     const allMembersPerTeam = await [].concat(...allMembersPerSquad);
     tribe.members = allMembersPerTeam
-
-
+    
     localStorage.setItem('tribe', JSON.stringify(tribe))
-    return Promise.resolve(tribe);
+
+    return Promise.resolve(tribe)
+    
 }
