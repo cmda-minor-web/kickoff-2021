@@ -37,6 +37,8 @@ body {
   padding:0;
   margin:0;
   transition:all .25s;
+  display:flex;
+  flex-direction:column;
 }
 h1, h2 {
   font-size: 1.6em;
@@ -137,6 +139,8 @@ svg {
 /* main */
 main {
   transition: transform .25s ease-in;
+  display:flex;
+  flex-direction:column;
 }
 main > header {
   max-width:30em;
@@ -179,7 +183,7 @@ header h1 em {
   font-weight:normal;
 }
 h2 {
-  font-size: 2em;
+  font-size: calc(32px + 16 * ((50vw - 320px) / 680));
   margin-top: 1.5em;
 }
 img {
@@ -286,16 +290,13 @@ section h2 {
     display:flex;
     flex-direction:column;
   }
-
   body.tribe main {
     display:grid;
     grid-template-columns: 1fr 1fr ;
   }
-  body.tribe main > section section {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:1rem;
-  }
+
+
+  
   body.tribe main > section section h3 {
     grid-column: 1 / -1;
   }
@@ -311,5 +312,13 @@ section h2 {
   aside {
     grid-column: 2 / 3;
     margin: 0 1rem 0 0;
+  }
+}
+
+@media (min-width:75em){
+  body.tribe main > section section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
   }
 }
